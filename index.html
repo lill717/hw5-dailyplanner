@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -18,6 +18,7 @@
     <h1 class="title">Lillian's 4 Hour Work Day Scheduler</h1>
     <p class="detail">A simple calendar app for scheduling my work day</p>
     <p id="currentDay" class="lead"></p>
+    <p id="currentHour" class="currentHour"></p>
   </header>
 
   <div class="textarea">
@@ -31,9 +32,9 @@
     <div class="rows">
       <!--Second row at 8am-->
       <div id = "8am" class=“row time-block”>8am</div> 
-      <div class="col-md-1"></div>
-      <extarea class="col-md-10 editAppt"></textarea>
-      <button class="btn col-md-1 saveBtn">Save</button>
+      <div class="col-md-1"></div> 
+      <textarea class="col-md-10 editAppt"></textarea>
+        <button class="btn col-md-1 saveBtn">Save</button>
     </div>
     <div class="rows">
       <!--Third row at 9am-->
@@ -50,8 +51,9 @@
       <button class="btn col-md-1 saveBtn">Save</button>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./assets/js/myscripts.js"></script>
 </body>
 
 </html>

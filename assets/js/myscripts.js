@@ -1,33 +1,16 @@
-// moment().format("DD/MM.YYY")
-var d = new Date();
-var day = getDate();
-var month = getMonth() + 1;
-var year = getFullYear();
-// var today = d.getDate() + "/" + (d.getMonth()+1) + "/" + d.getFullYear();
-const morning = '6 am';
-const evening = '8 pm';
-let width = 80;
-var appointments = [];
-let date = ("today");
-var currentHour = (newDate()).getHours();
+// const morning = '7 am';
+// let width = 80;
+// var appointments = [];
+
+var currentDayEl = moment();
+$('.lead').text(currentDayEl.format("dddd, MMMM Do"));
+console.log(currentDayEl);
+
+var currentHourEl = moment();
+$(".currentHour").text(currentHourEl.format("hh:" + "mm" + "a"));
+console.log(currentHourEl);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// return day + "/" + month + "/" + year;
 
 // $("planner") = function (choices) {
 //     var layout = $.extend({}, planner, choices);
@@ -47,28 +30,26 @@ var currentHour = (newDate()).getHours();
 // $("#currentDate").text(`${moment}`)
 
 
-console.log(d);
-alert(d.getFullYear() + '/' + (d.getMonth() + 1) + '/' + d.getDate());
+// console.log(d);
+// alert(d.getFullYear() + '/' + (d.getMonth() + 1) + '/' + d.getDate());
 
 
-function colorCoding() {
-    $(".colorCoding")
-        .each(function () {
-            var timeSlot = parseInt($(this).hour("id"));
-            if (timeSlot < currentHour && timeSlot > currentHour - 4) {
-                $(this).past;
-            } else if (timeSlot > currentHour && timeSlot < currentHour + 4); {
-                $(this).;
-            } else if (timeSlot === currentHour); {
-                $(this);
-            } else {
-                $(this).css("background-color", "Grey");
-            }
-        }
-        );
+// function colorCoding() {
+
+    var textarea = parseInt($(this).hour("#7am", "#8am", "#9am", "#10am"));
+    if (textarea < currentHour && textarea > currentHour - 10) {
+        $(this).css("background-color", "Blueviolet");
+    } else if (textarea > currentHour && textarea < currentHour + 10); {
+        $(this).css("background-color", "Violet");
+    } else (textarea === currentHour); {
+        $(this).css("background-color", "Yellow");
+    }
 
 
-    function appointments()
+
+// function appointments() {
     //can save by //clicking save button to //local storage
     //when refresh, still there
-}
+
+
+
