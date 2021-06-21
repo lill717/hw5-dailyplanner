@@ -1,37 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Lillian's Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="planner">Lillian's Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDate" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Lillian's Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="title">Lillian's Work Day Scheduler</h1>
+    <p class="detail">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+
+  <div class="textarea">
+    <div class="rows">
+    <!--First row at 7am-->
+    <tr>
+      <td>
+        <div class="col my-col col-a1 colorcode" id="7am">7am</div>
+      </td>
+    </tr>
+    <div class="col my-col col-a2 editAppt"></div>
+    <tr>
+      <td>
+        <div class="col my-col col-a3 editBtn">edit</div>
+      </td>
+    </tr>
     </div>
-    <script type="text/javascript" src="../assets/myscripts.js></script>
+    <div class="rows">
+    <!--Second row at 8am-->
+    <tr>
+      <td>
+        <div class="col my-col col-b1 colorcode" id="hour">8am</div>
+      </td>
+    </tr>
+    <div class="col my-col col-b2 editAppt"></div>
+    <tr>
+      <td>
+        <div class="col my-col col-b3 editBtn">edit</div>
+      </td>
+    </tr>
+    </div>
+    <div class="rows">
+    <!--Third row at 9am-->
+    <tr>
+      <td>
+        <div class="col my-col col-c1 colorcode" id="hour">9am</div>
+      </td>
+    </tr>
+    <div class="col my-col col-c2 editAppt"></div>
+    <tr>
+      <td>
+        <div class="col my-col col-c3 editBtn">edit</div>
+      </td>
+    </tr>
+    </div>
+    <div class="rows">
+    <!--Fourth row at 10am-->
+    <tr>
+      <td>
+        <div class="col my-col col-d1 colorcode" id="hour">10am</div>
+      </td>
+    </tr>
+    <div class="col my-col col-d2 editAppt"></div>
+    <tr>
+      <td>
+        <div class="col my-col col-d3 editBtn">edit</div>
+      </td>
+    </tr>
+    </div>
+    <div class="rows">
+    <!--Fifth row at 1am-->
+    <tr>
+      <td>
+        <div class="col my-col col-e1 colorcode" id="hour">11am</div>
+      </td>
+    </tr>
+    </div>
+    <div class="col my-col col-e2 editAppt"></div>
+    <tr>
+      <td>
+        <div class="col my-col col-e3 editBtn">edit</div>
+      </td>
+    </tr>
+  </div>
+  <div class="rows">
+    <!--Sixth row at 12pm-->
+    <tr>
+      <td>
+        <div class="col my-col col-f1 colorcode" id="hour">12pm</div>
+      </td>
+    </tr>
+  </div>
+  <div class="col my-col col-f2 editAppt"></div>
+  <tr>
+    <td>
+      <div class="col my-col col-f3 editBtn">edit</div>
+    </td>
+  </tr>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
 
-  </body>
 </html>

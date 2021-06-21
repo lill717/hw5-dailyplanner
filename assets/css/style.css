@@ -5,18 +5,18 @@ body {
 }
 
 textarea {
-  background: transparent;
+  background: black;
   border: none;
   resize: none;
-  color: #000000;
-  border-left: 1px solid black;
+  color: #white;
+  border-left: 2px, blue;
   padding: 10px;
 }
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: black;
+  background-color: midnightblue;
+  color: white;
   border-radius: 0;
   border-bottom: 10px solid black;
 }
@@ -30,30 +30,38 @@ textarea {
   border-radius: 15px;
 }
 
-.row {
+.rows {
   white-space: pre-wrap;
-  height: 80px;
+  height: relative;
   border-top: 1px solid white;
+  padding: auto;
+}
+  table {
+      margin: 20px;
+      width: 300px;
+  }
+  table th, td {
+    border: 2px solid;
 }
 
-.hour {
+#hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 1px solid #000000;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: blueviolet;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: yellow;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: violet;
   color: white;
 }
 
