@@ -1,8 +1,8 @@
 // moment().format("DD/MM.YYY")
 var d = new Date();
-var day = getDate());
-var month = getMonth() + 1);
-var year = getFullYear());
+var day = getDate();
+var month = getMonth() + 1;
+var year = getFullYear();
 // var today = d.getDate() + "/" + (d.getMonth()+1) + "/" + d.getFullYear();
 const morning = '6 am';
 const evening = '8 pm';
@@ -10,6 +10,22 @@ let width = 80;
 var appointments = [];
 let date = ("today");
 var currentHour = (newDate()).getHours();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // return day + "/" + month + "/" + year;
 

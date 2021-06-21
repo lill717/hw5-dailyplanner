@@ -15,97 +15,40 @@
 
 <body>
   <header class="jumbotron">
-    <h1 class="title">Lillian's Work Day Scheduler</h1>
-    <p class="detail">A simple calendar app for scheduling your work day</p>
+    <h1 class="title">Lillian's 4 Hour Work Day Scheduler</h1>
+    <p class="detail">A simple calendar app for scheduling my work day</p>
     <p id="currentDay" class="lead"></p>
   </header>
 
   <div class="textarea">
     <div class="rows">
-    <!--First row at 7am-->
-    <tr>
-      <td>
-        <div class="col my-col col-a1 colorcode" id="7am">7am</div>
-      </td>
-    </tr>
-    <div class="col my-col col-a2 editAppt"></div>
-    <tr>
-      <td>
-        <div class="col my-col col-a3 editBtn">edit</div>
-      </td>
-    </tr>
+      <!--First row at 7am-->
+      <div id = "7am" class=“row time-block”>7am</div> 
+      <div class="col-md-1"></div> 
+      <textarea class="col-md-10 editAppt"></textarea>
+      <button class="btn col-md-1 saveBtn">Save</button>
     </div>
     <div class="rows">
-    <!--Second row at 8am-->
-    <tr>
-      <td>
-        <div class="col my-col col-b1 colorcode" id="hour">8am</div>
-      </td>
-    </tr>
-    <div class="col my-col col-b2 editAppt"></div>
-    <tr>
-      <td>
-        <div class="col my-col col-b3 editBtn">edit</div>
-      </td>
-    </tr>
+      <!--Second row at 8am-->
+      <div id = "8am" class=“row time-block”>8am</div> 
+      <div class="col-md-1"></div>
+      <extarea class="col-md-10 editAppt"></textarea>
+      <button class="btn col-md-1 saveBtn">Save</button>
     </div>
     <div class="rows">
-    <!--Third row at 9am-->
-    <tr>
-      <td>
-        <div class="col my-col col-c1 colorcode" id="hour">9am</div>
-      </td>
-    </tr>
-    <div class="col my-col col-c2 editAppt"></div>
-    <tr>
-      <td>
-        <div class="col my-col col-c3 editBtn">edit</div>
-      </td>
-    </tr>
+      <!--Third row at 9am-->
+      <div id = "9am" class=“row time-block”>9am</div> 
+      <div class="col-md-1"></div>
+      <textarea class="col-md-10 editAppt"></textarea>
+      <button class="btn col-md-1 saveBtn">Save</button>
     </div>
     <div class="rows">
-    <!--Fourth row at 10am-->
-    <tr>
-      <td>
-        <div class="col my-col col-d1 colorcode" id="hour">10am</div>
-      </td>
-    </tr>
-    <div class="col my-col col-d2 editAppt"></div>
-    <tr>
-      <td>
-        <div class="col my-col col-d3 editBtn">edit</div>
-      </td>
-    </tr>
+      <!--Fourth row at 10am-->
+      <div id = "10am" class=“row time-block”>10am</div> 
+      <div class="col-md-1 col-d1"></div>
+      <textarea class="col-md-10 editAppt"></textarea>
+      <button class="btn col-md-1 saveBtn">Save</button>
     </div>
-    <div class="rows">
-    <!--Fifth row at 1am-->
-    <tr>
-      <td>
-        <div class="col my-col col-e1 colorcode" id="hour">11am</div>
-      </td>
-    </tr>
-    </div>
-    <div class="col my-col col-e2 editAppt"></div>
-    <tr>
-      <td>
-        <div class="col my-col col-e3 editBtn">edit</div>
-      </td>
-    </tr>
-  </div>
-  <div class="rows">
-    <!--Sixth row at 12pm-->
-    <tr>
-      <td>
-        <div class="col my-col col-f1 colorcode" id="hour">12pm</div>
-      </td>
-    </tr>
-  </div>
-  <div class="col my-col col-f2 editAppt"></div>
-  <tr>
-    <td>
-      <div class="col my-col col-f3 editBtn">edit</div>
-    </td>
-  </tr>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
