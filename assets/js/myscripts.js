@@ -36,12 +36,6 @@ function rowColor() {
 }
 rowColor();
 
-// function appointments() {
-//can save by //clicking save button to //local storage
-//when refresh, still there
-//  $("saveBtn").on("click", function(save) {
-
-
 $(document).ready(function () {
     // var editAppt = $(".saveBtn").text();
     $(".saveBtn").click(function () {
