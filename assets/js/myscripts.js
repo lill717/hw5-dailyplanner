@@ -1,5 +1,11 @@
-
-// var appointments = [];
+// let value = localStorage.getItem('7am')
+// console.log($('#7am').text(value))
+// let value = localStorage.getItem('8am')
+// console.log($('#8am').text(value))
+// let value = localStorage.getItem('9am')
+// console.log($('#9am').text(value))
+// let value = localStorage.getItem('10am')
+// console.log($('#10am').text(value))
 
 var currentDayEl = moment();
 $('.lead').text(currentDayEl.format("dddd, MMMM Do"));
@@ -8,7 +14,6 @@ console.log(currentDayEl);
 var currentHourEl = moment();
 $(".currentHour").text(currentHourEl.format("hh:" + "mm" + "a"));
 console.log(currentHourEl);
-
 
 function rowColor() {
     var currentHourEl = currentDayEl.hours();
@@ -34,9 +39,8 @@ rowColor();
 // function appointments() {
 //can save by //clicking save button to //local storage
 //when refresh, still there
-
 //  $("saveBtn").on("click", function(save) {
-//     save.
+
 
 $(document).ready(function () {
     // var editAppt = $(".saveBtn").text();
@@ -55,16 +59,12 @@ $(document).ready(function () {
 
 // console.log(editAppt);
 
-// //Retrieve the col-md-10 editAppt
+// Retrieve the col-md-10 editAppt
 
 // function displayVals() {
 //     $("value").val(siblings(".btn col-md-1 saveBtn"))
 //     displayVals() ;
 // }
-
-
-
-// localStorage, input,text, value
 
 // $("#7am".textarea).val(localStorage.getItem("7am"));
 // document.getElementById("input").text = localStorage.getItem("");

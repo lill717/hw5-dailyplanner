@@ -5,7 +5,7 @@ This is Lillian's 4 Hour Work Day Scheduler.
 
  I work a busy part time job that requires a lot of scheduled appointments. To be time efficient, I needed a daily planner to keep track of all of my important events. I need it colorcoded to tell me which events have passed and which have yet to occur that day.
 
-![top]
+![main] 
 
 
 
