@@ -40,15 +40,16 @@ rowColor();
 
 $(document).ready(function () {
     // var editAppt = $(".saveBtn").text();
-    $(".editAppt").click(function () {
-        var str = $(".editAppt").val();
-        localStorage.setItem("str", "");
-        console.log(str);
+    $(".saveBtn").click(function () {
+        var str = $(this).siblings("textarea").val();
+        var key = $(this).siblings("div.row").attr("id");
+        localStorage.setItem(key, str);
+        console.log(key);
     })
 });
 
 
-
+// console.log(editAppt);
 
 // $('.col-md-10 editAppt').val(col-md-10 editAppt);
 
